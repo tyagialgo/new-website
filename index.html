@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10141f">
+  <meta name="description" content="A private birthday experience made with love.">
+  <title>Happy Birthday, My Girl // Only You</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;600;700;800&family=Playfair+Display:ital,wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section class="boot-screen" id="lock-screen" aria-labelledby="boot-title">
+    <div class="boot-grid" aria-hidden="true"></div>
+    <div class="boot-content">
+      <p class="system-label">private transmission / 001</p>
+      <div class="boot-heart">+</div>
+      <h1 id="boot-title">Happy birthday,<br><em>my girl.</em></h1>
+      <p class="boot-copy">A small world of memories, mischief, and all the reasons I love you.</p>
+      <div class="progress-wrap"><span id="boot-progress"></span></div>
+      <p class="boot-status" id="boot-status">Initializing memories... <strong>00%</strong></p>
+      <form class="access-form" id="lock-form">
+        <label for="name-input">identity detected <small>(optional)</small></label>
+        <input id="name-input" type="text" maxlength="28" placeholder="your name">
+        <label for="password-input">access phrase</label>
+        <div class="access-row"><input id="password-input" type="password" placeholder="type the secret word" required><button type="submit">ENTER <span>↗</span></button></div>
+        <p class="lock-error" id="lock-error">Access denied. Try the word that belongs to us.</p>
+      </form>
+      <p class="access-note">access level: <span>only you ♥</span></p>
+    </div>
+  </section>
+
+  <div class="experience">
+    <header class="topbar">
+      <a class="brand" href="#top">ONLY YOU <span>♥</span></a>
+      <div class="topbar-meta"><span class="live-dot"></span> birthday protocol active <button id="reset-access" type="button">lock</button></div>
+    </header>
+    <main id="top">
+      <section class="intro-screen scene" aria-labelledby="intro-title">
+        <div class="intro-copy"><p class="kicker">scene 01 / before you</p><h2 id="intro-title">Before you met me,<br>there was a world<br><em>without you.</em></h2><p>Then you arrived and changed the entire plot. Welcome to our little movie.</p><button class="solid-button" data-open-phone type="button">Begin the story <span>↗</span></button></div>
+        <div class="intro-orbit" aria-hidden="true"><span class="orbit-label">chapter one</span><div class="orbit-ring ring-a"></div><div class="orbit-ring ring-b"></div><div class="orbit-core">♥</div><span class="orbit-star star-a">✦</span><span class="orbit-star star-b">✧</span></div>
+      </section>
+      <section class="phone-section scene" id="phone" aria-labelledby="phone-title">
+        <div class="section-heading"><p class="kicker">your private device</p><h2 id="phone-title">The phone<br>is <em>yours.</em></h2><p>Tap around. Every app is a tiny door to something I wanted you to find.</p></div>
+        <div class="phone-wrap"><div class="phone-shadow"></div><div class="phone" aria-label="Interactive birthday phone"><div class="phone-notch"></div><div class="phone-status"><span>09:21</span><span>● ◔ ▪</span></div><div class="phone-wallpaper"><p class="phone-date">21 / 09 / 2026</p><h3>Hi, <span id="phone-name">beautiful</span>.</h3><p class="phone-time">your day has arrived</p></div><div class="app-grid"><button class="app app-chat" data-panel="chat"><span>♡</span><small>our chats</small></button><button class="app app-gallery" data-panel="gallery"><span>✦</span><small>gallery</small></button><button class="app app-reasons" data-panel="reasons"><span>♥</span><small>reasons</small></button><button class="app app-song" data-panel="song"><span>♫</span><small>our song</small></button><button class="app app-memory" data-panel="memory"><span>⌁</span><small>memories</small></button><button class="app app-secret" data-panel="secret"><span>⌑</span><small>secret</small></button></div><div class="phone-dock"><button data-panel="letter">✉<small>letter</small></button><button data-panel="cake">✹<small>wish</small></button></div><div class="phone-home"></div></div></div>
+      </section>
+      <section class="timeline-section scene" id="timeline" aria-labelledby="timeline-title"><div class="section-heading"><p class="kicker">scene 02 / the timeline</p><h2 id="timeline-title">A map of<br><em>us.</em></h2></div><div class="timeline" role="tablist" aria-label="Our relationship timeline"><button class="timeline-stop is-active" data-memory="past" role="tab"><span>01</span><b>Before</b><small>a world without us</small></button><button class="timeline-stop" data-memory="meeting" role="tab"><span>02</span><b>First meeting</b><small>the plot twist</small></button><button class="timeline-stop" data-memory="memories" role="tab"><span>03</span><b>Our memories</b><small>the good parts</small></button><button class="timeline-stop" data-memory="today" role="tab"><span>04</span><b>Today</b><small>your birthday</small></button><button class="timeline-stop" data-memory="future" role="tab"><span>05</span><b>Future</b><small>to be continued</small></button></div><article class="timeline-card"><div class="timeline-image" id="timeline-image"><span>✦</span></div><div><p class="kicker" id="timeline-kicker">chapter 01</p><h3 id="timeline-card-title">Before you</h3><p id="timeline-card-copy">I did not know what was missing yet. Then the universe quietly put you in my path.</p></div></article></section>
+      <section class="puzzle-section scene" id="puzzle" aria-labelledby="puzzle-title"><div class="section-heading"><p class="kicker">scene 03 / level one</p><h2 id="puzzle-title">How much do<br>you know about <em>us?</em></h2></div><div class="quiz-card"><div class="quiz-top"><span>relationship quiz</span><strong id="quiz-count">01 / 03</strong></div><h3 id="quiz-question">Where did our story first begin?</h3><div class="quiz-options" id="quiz-options"></div><p class="quiz-result" id="quiz-result" aria-live="polite"></p><div class="quiz-progress"><span id="quiz-progress"></span></div></div></section>
+      <section class="universe-section scene" id="universe" aria-labelledby="universe-title"><div class="universe-copy"><p class="kicker">scene 04 / our universe</p><h2 id="universe-title">Every star<br>is a reason<br><em>to love you.</em></h2><p>Find three stars. They have been waiting for you.</p><strong id="star-count">0 / 3 discovered</strong></div><div class="starfield" id="starfield" aria-label="Clickable memory stars"></div></section>
+      <section class="letter-final scene" id="letter" aria-labelledby="letter-title"><p class="kicker">final scene / for your eyes only</p><article class="final-letter"><div class="letter-stamp">ONLY<br>YOU</div><p class="letter-to">Dear <span id="letter-recipient">you</span>,</p><h2 id="letter-title">You are my<br>favorite <em>chapter.</em></h2><p>Somehow, in a universe full of people and places and possible stories, I found you. You make ordinary Tuesday mornings feel like a scene worth remembering.</p><p>On your birthday, I hope you feel what I feel every day: how completely wonderful, deeply loved, and endlessly irreplaceable you are.</p><p>Here is to every version of us still waiting to happen. The best part is that this story is not ending here.</p><div class="signature">Always yours, <span>♥</span></div></article><p class="to-be-continued">to be continued...</p></section>
+      <section class="cake-section scene" id="cake" aria-labelledby="cake-title"><div><p class="kicker">post-credits / make a wish</p><h2 id="cake-title">One more<br>thing, <em>birthday girl.</em></h2><p>Tap the candles. Close your eyes. Make it a good one.</p><p class="wish-message" id="wish-message">The wish is still waiting.</p></div><button class="cake-stage" id="cake-stage" type="button" aria-label="Blow out the birthday candles"><span class="cake-spark">✦</span><div class="cake"><div class="flames"><i></i><i></i><i></i><i></i><i></i></div><div class="cake-icing"></div><div class="cake-top"></div><div class="cake-bottom"></div></div><span class="cake-plate"></span></button></section>
+    </main>
+    <footer class="footer"><span>made for one person only</span><span>our story / 2026 ♥</span></footer>
+  </div>
+  <div class="modal" id="modal" aria-hidden="true"><div class="modal-backdrop" data-close-modal></div><article class="modal-card"><button class="modal-close" data-close-modal aria-label="Close">×</button><p class="kicker" id="modal-kicker">a little something</p><h2 id="modal-title">For you</h2><div id="modal-content"></div></article></div>
+  <div class="confetti-layer" id="confetti-layer" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>

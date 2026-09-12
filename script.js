@@ -60,7 +60,7 @@ beginBoot();
 
 $$('[data-scroll]').forEach((button) => button.addEventListener('click', () => $(button.dataset.scroll)?.scrollIntoView({ behavior: 'smooth' })));
 $$('[data-gallery-image]').forEach((photo) => photo.addEventListener('click', () => {
-  const stories = { 'Memory #01': '19 NOV 2024. I still remember... and maybe you do not know this, but this moment stayed with me.', 'Memory #02': 'A small moment, kept forever because it felt like us.', 'The person behind this': 'The person who spent way too much time making this for you.', 'A favourite memory': 'The kind of memory I would choose again.' };
+  const stories = { 'Memory 1': '19 NOV 2024. I still remember... and maybe you do not know this, but this moment stayed with me.', 'Memory 2': 'A small moment, kept forever because it felt like us.', Abhay: 'The person who spent way too much time making this for you.', 'Abhay and her': 'The kind of memory I would choose again.' };
   openModal(photo.dataset.galleryTitle, 'memory unlocked', `<img class="modal-gallery-image" src="${photo.dataset.galleryImage}" alt="${photo.dataset.galleryTitle}"><p class="big-quote">${stories[photo.dataset.galleryTitle] || 'A little piece of us.'}</p>`);
   $('#memory-story').textContent = stories[photo.dataset.galleryTitle] || 'A little piece of us.';
 }));
